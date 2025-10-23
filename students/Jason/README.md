@@ -14,8 +14,9 @@ VibeCoding 任务提交（Jason）
 - task3 迷你项目（节目摘要数据 + 前端）
 - task4 代币合约与前端交互示例
 - task5 客户沟通与转化文档模板
+- task6 独立站转化（展示页 Demo + 话术 + 指标）
 
 如何使用
 1) 根据实际部署与运行结果替换占位内容。
 2) 如需 Next.js + RainbowKit，按 task4 前端说明初始化并放置在本目录。
-3) 本地自测后提交 PR。
+3) 本地自测后提交 PR。task6 参见 `students/Jason/task6/`。
