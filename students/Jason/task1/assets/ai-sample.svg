@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2a56"/>
+      <stop offset="100%" stop-color="#0e1025"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#e8eaff">
+    <text x="28" y="48" font-size="22" fill="#9fb5ff">AI generated code sample</text>
+    <rect x="24" y="68" width="752" height="320" rx="12" fill="#141834" stroke="#293061"/>
+    <text x="40" y="102" font-size="16" fill="#8aa0ff">// app/app.js (excerpt)</text>
+    <text x="40" y="132" font-size="15">async function fetchSummary(id, { signal }) {</text>
+    <text x="40" y="156" font-size="15">  const res = await fetch(`data/summaries/${id}.json`, { signal });</text>
+    <text x="40" y="180" font-size="15">  if (!res.ok) throw new Error('load failed');</text>
+    <text x="40" y="204" font-size="15">  return res.json();</text>
+    <text x="40" y="228" font-size="15">}</text>
+    <text x="40" y="268" font-size="15">document.getElementById('episodes').addEventListener('click', async (e) =&gt; {</text>
+    <text x="40" y="292" font-size="15">  // … show summary panel</text>
+    <text x="40" y="316" font-size="15">});</text>
+  </g>
+</svg>

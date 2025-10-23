@@ -23,4 +23,4 @@
 
 3) AI 样板代码或截图
 - 代码：见 `students/Jason/task3/app/*` 与 `task4/*`
-- 截图占位：`students/Jason/task1/assets/ai-sample.png`（可替换为你的真实截图）
+- 截图占位：`students/Jason/task1/assets/ai-sample.svg`（可替换为你的真实截图）

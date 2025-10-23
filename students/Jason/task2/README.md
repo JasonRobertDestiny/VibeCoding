@@ -2,7 +2,7 @@
 
 交付物
 1) 个人介绍页代码：见 `site/`（原生 HTML/CSS/JS）。
-2) 部署链接（占位）：https://jasonrobert.me/vibecoding-profile 或你的 Vercel 链接。
+2) 部署链接（占位）：https://jasonrobert.me/vibecoding-profile 或你的 Vercel 链接。若无，请先在 Vercel 创建静态项目并指向 `students/Jason/task2/site` 目录。
 3) 简单 README：下方给出预览方式与个性化点。
 
 根据 GitHub 主页提取信息
@@ -13,4 +13,3 @@
 
 本地预览
 - 直接打开 `site/index.html` 或使用静态服务器。
-
