@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人介绍 - Jason</title>
+    <style>
+      :root { --bg:#0f1226; --card:#171a36; --fg:#e6e8ff; --muted:#9aa3c7; --acc:#7c5cff; }
+      *{box-sizing:border-box}
+      body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1200px 600px at 70% -10%, #221b5d, transparent), var(--bg); color:var(--fg)}
+      .wrap{max-width:860px;margin:0 auto;padding:32px}
+      header{display:flex;gap:20px;align-items:center}
+      img.avatar{width:84px;height:84px;border-radius:16px;border:1px solid #2b2f59}
+      h1{margin:0;font-size:28px}
+      p{color:var(--muted);line-height:1.6}
+      .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.1));border:1px solid #2b2f59;border-radius:16px;padding:20px;margin-top:20px}
+      .tags{display:flex;flex-wrap:wrap;gap:8px}
+      .tag{padding:6px 10px;border-radius:999px;background:#1f2348;border:1px solid #2b2f59;color:#cbd2ff;font-size:13px}
+      a.btn{display:inline-block;margin-top:14px;background:var(--acc);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+      footer{margin-top:28px;font-size:13px;color:#8e98c9}
+      .links a{color:#cbd2ff;margin-right:12px}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/142037574?v=4" alt="avatar" />
+        <div>
+          <h1>JasonRobert</h1>
+          <p>Full-Stack Developer | Web3 & AI Enthusiast · Los Angeles</p>
+          <div class="links">
+            <a href="https://github.com/JasonRobertDestiny" target="_blank">GitHub</a>
+            <a href="http://jasonrobert.me/" target="_blank">Website</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>关于我</h2>
+        <p>热爱将 Web3 与 AI 融入全栈产品交付，用更快的速度验证与迭代。</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Solidity</span>
+          <span class="tag">AI Agents</span>
+        </div>
+        <a class="btn" href="mailto:me@jasonrobert.me">联系我</a>
+      </section>
+
+      <section class="card">
+        <h2>代表作品</h2>
+        <ul>
+          <li>Podcast Landing MVP：自动摘要、节目聚合、订阅 CTA</li>
+          <li>Token Gating Demo：ERC20 + 前端转账/申请</li>
+          <li>Micro SaaS 工具：RSS → Poster 自动化</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2025 JasonRobert. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      window.addEventListener('load', ()=>{
+        const t = performance.getEntriesByType('navigation')[0];
+        console.log('页面加载耗时(ms):', Math.round(t.loadEventEnd - t.startTime));
+      });
+    </script>
+  </body>
+  </html>
+

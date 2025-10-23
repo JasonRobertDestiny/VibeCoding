@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>播客展示页 Demo - Jason</title>
+    <style>
+      :root { --bg:#0e1025; --card:#151936; --fg:#e8eaff; --muted:#99a1c9; --acc:#5b8cff; }
+      *{box-sizing:border-box}
+      body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1000px 600px at 60% -10%, #1a2964, transparent), var(--bg); color:var(--fg)}
+      .wrap{max-width:920px;margin:0 auto;padding:28px}
+      header{display:flex;gap:18px;align-items:center}
+      .logo{width:64px;height:64px;border-radius:12px;background:#1d2248;border:1px solid #2a2f59;display:flex;align-items:center;justify-content:center;font-weight:700;color:#9fb5ff}
+      h1{margin:0;font-size:26px}
+      p{color:var(--muted);line-height:1.7}
+      .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
+      @media(min-width:860px){ .grid{grid-template-columns:2fr 1fr} }
+      .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.08));border:1px solid #2a2f59;border-radius:16px;padding:18px}
+      .ep{padding:12px;border-radius:12px;background:#1a1f45;border:1px solid #2a2f59}
+      .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+      .btn{background:var(--acc);color:white;text-decoration:none;padding:10px 12px;border-radius:10px}
+      footer{margin-top:24px;font-size:13px;color:#8f98c7}
+      .tag{display:inline-block;margin-right:8px;margin-top:8px;padding:6px 10px;border-radius:999px;background:#1f244a;border:1px solid #2a2f59;color:#cbd2ff;font-size:12px}
+      .muted{color:var(--muted)}
+      .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#22305e;border:1px solid #30417a;color:#bcd0ff;font-size:12px}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">FM</div>
+        <div>
+          <h1>某某播客 · 品牌展示页</h1>
+          <p class="muted">聚合节目亮点与订阅入口，一页完成展示与转化</p>
+          <div class="cta">
+            <a class="btn" href="#subscribe">订阅入口</a>
+            <a class="btn" href="#sponsor">赞助与合作</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section class="card">
+          <h2>最新节目</h2>
+          <div class="ep">
+            <strong>第 68 期：AI 驱动的内容增长</strong>
+            <p class="muted">2025-10-20 · 42:10</p>
+            <p>亮点：
+              <span class="badge">摘要自动化</span>
+              <span class="badge">A/B 测试</span>
+              <span class="badge">转化追踪</span>
+            </p>
+            <div>
+              <span class="tag">运营</span>
+              <span class="tag">AI</span>
+              <span class="tag">增长</span>
+            </div>
+          </div>
+          <div class="ep">
+            <strong>第 67 期：从 0 到 1 的品牌统一页</strong>
+            <p class="muted">2025-10-13 · 36:55</p>
+            <p>亮点：
+              <span class="badge">一页完成订阅</span>
+              <span class="badge">品牌色定制</span>
+            </p>
+            <div>
+              <span class="tag">设计</span>
+              <span class="tag">NoCode</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2 id="subscribe">订阅与平台</h2>
+          <p>
+            <a class="btn" href="#">Apple Podcasts</a>
+            <a class="btn" href="#">小宇宙</a>
+            <a class="btn" href="#">Spotify</a>
+          </p>
+          <h2 id="sponsor">赞助与合作</h2>
+          <p>商务邮箱：<a href="mailto:biz@example.com">biz@example.com</a></p>
+          <p>赞助方案：前贴片 / 中插 / 定制专题</p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>© 2025 某某播客 · Powered by Vibe Coding MVP</p>
+      </footer>
+    </div>
+
+    <script>
+      // 简单埋点占位
+      (function(){
+        const key = 'vc_task6_metrics';
+        const data = JSON.parse(localStorage.getItem(key) || '{}');
+        data.pageviews = (data.pageviews||0) + 1;
+        localStorage.setItem(key, JSON.stringify(data));
+        document.addEventListener('click', (e)=>{
+          const a = e.target.closest('a.btn');
+          if(a){
+            const d = JSON.parse(localStorage.getItem(key) || '{}');
+            d.cta = (d.cta||0) + 1;
+            localStorage.setItem(key, JSON.stringify(d));
+            console.log('CTA click tracked');
+          }
+        });
+      })();
+    </script>
+  </body>
+  </html>
+

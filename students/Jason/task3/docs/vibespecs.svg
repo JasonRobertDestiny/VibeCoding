@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0e1025"/>
+      <stop offset="100%" stop-color="#1f2a56"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <g font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#e8eaff">
+    <text x="28" y="44" font-size="24" fill="#9fb5ff">VibeSpecs · Podcast Landing MVP</text>
+    <!-- Steps -->
+    <rect x="40" y="80" width="260" height="120" rx="12" fill="#141834" stroke="#293061"/>
+    <text x="58" y="110" font-size="16">数据源</text>
+    <text x="58" y="136" font-size="14" fill="#cbd2ff">RSS 拉取 · 手动补充</text>
+    <text x="58" y="158" font-size="14" fill="#cbd2ff">标题/时长/日期/链接</text>
+
+    <rect x="350" y="80" width="260" height="120" rx="12" fill="#141834" stroke="#293061"/>
+    <text x="368" y="110" font-size="16">内容生成</text>
+    <text x="368" y="136" font-size="14" fill="#cbd2ff">LLM 摘要 · 亮点 · 标签</text>
+    <text x="368" y="158" font-size="14" fill="#cbd2ff">敏感词规避 · 温度控制</text>
+
+    <rect x="660" y="80" width="260" height="120" rx="12" fill="#141834" stroke="#293061"/>
+    <text x="678" y="110" font-size="16">展示与部署</text>
+    <text x="678" y="136" font-size="14" fill="#cbd2ff">Next.js (ISR) / 静态导出</text>
+    <text x="678" y="158" font-size="14" fill="#cbd2ff">Vercel / 自定义域名</text>
+
+    <!-- Arrows -->
+    <path d="M300 140 L340 140" stroke="#5b8cff" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M610 140 L650 140" stroke="#5b8cff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- CTA & Metrics -->
+    <rect x="40" y="240" width="880" height="200" rx="12" fill="#141834" stroke="#293061"/>
+    <text x="58" y="270" font-size="16">CTA 与指标</text>
+    <text x="58" y="296" font-size="14" fill="#cbd2ff">订阅入口 · 赞助 · 商务表单</text>
+    <text x="58" y="318" font-size="14" fill="#cbd2ff">埋点：pageview, cta_click · 每周导出复盘</text>
+    <text x="58" y="340" font-size="14" fill="#cbd2ff">目标：UV ≥ 100 · CTA ≥ 5%</text>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b8cff" />
+    </marker>
+  </defs>
+</svg>
