@@ -4,7 +4,7 @@
 - 前端静态页 + 本地数据，演示节目列表与摘要查看，便于快速验证信息架构与交互（无需后端）。
 
 2) 项目说明文档（VibeSpecs 流程截图）
-- 请将你的 VibeSpecs 流程截图放置到 `docs/vibespecs.png`，并在此粘贴要点：
+- 参见 `docs/vibespecs.svg`（占位图），并在此粘贴要点：
   - 页面：索引页、节目详情页、合作 CTA。
   - 数据：RSS 源、手动补充节目标签。
   - API：/api/episodes 列表，/api/summary?id=... 摘要。
